@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    transition: opacity 0.3s ease; 
+}
+
+.container{
+    padding: 10px 8%;
+    background-color:#001861;
+    width: 100%;
+    position: fixed;
+    z-index: 1
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.logo h4{
+    width: 100px;
+    color: #00ffee;
+}
+.logo span{
+    color: #00ff73;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #00ff73;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ff73;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.articles{
+    padding : 30px 100px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.article-section{
+    padding-bottom: 50px;
+}
+
+.articles .header{
+    text-align: center;
+    padding: 50px 0;
+    color: #00ff73;
+}
+
+
+.paragraph{
+    padding: 10px 0;
+    line-height: 1.3;
+}
+
+.title{
+    color: #eaff00;
+}
+
+.paragrap p{
+    text-align: justify;
+}
+
+.article-section .source{
+    font-size: 12px;
+}
+
+.article-section a{
+    text-decoration: none;
+    color: #00ffee;
+}
+
+paragraph h4{
+    font-size: 17px;
+}
+
+.footer{
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+}
